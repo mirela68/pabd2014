@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Simple Personal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="{{ asset('bundles/CiolacuBundle/css/style.css') }}" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div class="title">
+    <div class="title-top">
+                  <div class="title-bottom-right">
+                    <h1><a href="Home">Pagina <span>personala</span> - demo proiect Ciolacu Ion Marius</a></h1>
+                    <p>Universitatea 1 Decembrie 1918</p>
+    		</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="column-left">
+      <h3>MENU</h3>
+      <a href="#skip-menu" class="hidden">Menu</a>
+      <ul class="menu">
+        <li><a href="Home" {% if myaction=="Home" %} class="active" {% endif %} >Home</a></li>
+        <li><a href="About" {% if myaction=="About" %} class="active"{%endif%}>About</a></li>
+        <li class="last"><a href="Contact" {% if myaction=="Contact" %} class="active"{%endif%}>Contact</a></li>
+      </ul>
+    </div>
+    <div id="skip-menu"></div>
+    <div class="column-right">
+      <div class="box">
+        <div class="box-top"></div>
+        <div class="box-in">
+	{% if myaction=="Home" %} 
+          <h2>Bine ati venit pe site-ul meu</h2>
+          <p>Aceasta este pagina implicita, facuta pentru proiect.</p>
+          <p>Va multumesc pentru vizita!</p>
+          <br />
+          <h2>Detalii site</h2>
+          <ul class="main-list">
+            <li>Daca accesati <strong>Ciolacu</strong> ajungeti aici</li>
+            <li>Daca accesati <strong>Ciolacu/</strong> ajungeti aici</li>
+            <li>Daca accesati <strong>Ciolacu/About</strong> ajungeti la pagina despre mine.</li>
+            <li>Daca accesati <strong>Ciolacu/Contact</strong> aflati cum sa ma contactati.</li>
+            <li>Daca accesati <strong>Ciolacu/OriceAltceva</strong> ajungeti aici.</li>
+          </ul>
+	{% elseif myaction=="About" %} 
+          <h2>Despre mine</h2>
+          <ul class="main-list">
+            <li>Masterand <strong>Universitatea 1 Decembrie 1918 Alba Iulia</strong></li>
+            <li>Administrator retea <strong>S.C. RCS & RDS S.A.</strong> </li>
+            <li>Angajat <strong>Consiliul Judetean Alba</strong></li>
+            <li>Instructor CISCO <strong>Academia UNIDEC</strong> Alba Iulia</li>
+            <li> <strong>Formator de Formatori</strong></li>
+            <li> <strong> Consultant IT</strong></li>
+          </ul>
+	{% elseif myaction=="Contact" %} 
+          <h2>Cum ma puteti gasi?</h2>
+          <ul class="main-list">
+            <li>Email: <strong>mciolacu@yahoo.com</strong></li>
+            <li>Telefon: <strong>0788 77 60 50</strong> </li>
+            <li>Adresa: <strong>Alba Iulia</strong></li>
+          </ul>
+	{% endif %}
+        </div>
+      </div>
+    <div class="cleaner">&nbsp;</div>
+  </div>
+</div>
+<div align=center>Ciolacu Ion Marius - {{ myaction }} </div></body>
+</html>
+

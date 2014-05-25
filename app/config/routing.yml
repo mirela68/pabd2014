@@ -1,0 +1,4 @@
+website_ciolacu:
+    resource: "@websiteCiolacuBundle/Resources/config/routing.yml"
+    prefix:   /
+
