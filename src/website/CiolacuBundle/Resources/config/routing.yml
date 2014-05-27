@@ -1,0 +1,9 @@
+website_ciolacu_homepage:
+    pattern:  /Ciolacu
+    defaults: { _controller: websiteCiolacuBundle:Default:index }
+website_ciolacu_homepage:
+    pattern:  /Ciolacu/
+    defaults: { _controller: websiteCiolacuBundle:Default:index }
+website_ciolacu_actions:
+    pattern:  /Ciolacu/{myaction}
+    defaults: { _controller: websiteCiolacuBundle:Default:index }
