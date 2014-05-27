@@ -1,0 +1,7 @@
+parameters:
+#    website_ciolacu.example.class: website\CiolacuBundle\Example
+
+services:
+#    website_ciolacu.example:
+#        class: %website_ciolacu.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
