@@ -35,3 +35,4 @@ http://gitref.org/ (git) http://symfony.com/doc/current/index.html (symfony)
 - activitate git (completare wiki, comentarii etc)
 
 Obs. Studentii care nu pot participa fizic la 1/2 din laboratoare pot compensa prin implicarea pe activitatile complexe.
+Test modificare Readme - marius
